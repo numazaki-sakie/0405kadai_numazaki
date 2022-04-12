@@ -1,0 +1,307 @@
+@charset "utf-8";
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4f260b;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* ここまで */
+
+/* ヘッダー */
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 6.53% 0 2.51%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 226.7px;
+}
+
+.pc_nav ul {
+    display: flex;
+}
+
+.pc_nav li a {
+    color: #fff;
+    font-size: 18px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    width: 104px;
+    display: block;
+    font-weight: bold;
+    margin-right: 55px;
+    text-align: center;    
+}
+
+.pc_nav li:last-child a {
+    margin-right: 0;
+}
+
+.slider img {
+    width: 100%;
+}
+
+/* ここまでがヘッダー */
+
+/* 一杯のコーヒー */
+
+body {
+    background-color: #e8d9bf;
+}
+
+.concept {
+    width: 100%;
+    margin: 0 auto;
+    text-align:center
+}
+
+.copy {
+    padding-top: 100px;
+    font-size: 30px;
+}
+
+.happy {
+    padding-top: 65px;
+    font-size: 82px;
+    font-weight: normal;
+    line-height: 1.17;
+    letter-spacing: 0.1em;
+
+}
+
+.mainiti {
+    padding-top: 42px;
+    padding-bottom: 100px;
+    font-size: 23px;
+    line-height: 1.65;
+}
+
+/* ここまで１杯のコーヒー */
+
+/* アバウトアス */
+
+.aboutus {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.watasitati {
+    width: 500px;
+    padding-left: 80px;
+}
+
+.rate img {
+    width: 500px;
+    height: 560px;
+    object-fit: cover;
+    border-radius: 0 0 40px 0;
+}
+
+.about2x img {
+    width: 50%;
+    padding-top: 68px;
+}
+
+.kodawari {
+    font-size: 44px;
+    line-height: 1.38;
+    padding-top: 57px;
+}
+
+.message {
+    width: 410px;
+    font-size: 16px;
+    line-height: 1.625;
+    padding-top: 37px;
+}
+
+/* ここまでアバウトアス */
+
+/* メニュー */
+
+.menu {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 107px;
+}
+
+.menumoji img {
+    width: 150px;
+}
+
+.menumoji {
+    text-align : center;
+    padding-bottom: 49px;
+}
+
+.menulist {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.coffee img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0 40px 0 0;
+}
+
+.pasta img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0 40px 0 0;
+}
+
+.cake img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0 40px 0 0;
+}
+
+.recommend {
+    width: 300px;
+    font-size: 17px;
+    line-height: 1.47;
+    padding-top: 24px;
+}
+
+h3 {
+    font-size: 38px;
+    color: #d30202;
+    margin-top: -9px;
+}
+
+/* ここまでメニュー */
+
+/* ここからギャラリー */
+
+.gallerymoji img{
+    width: 245px;
+}
+
+.gallerymoji {
+    text-align : center;
+    padding-top: 98px;
+    padding-bottom: 26px;
+}
+
+.galleryphoto img {
+    width: 384px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.galleryphoto {
+    display: flex;
+}
+
+/* ここまでギャラリー */
+
+/* ここからイベント */
+
+.eventmoji {
+    text-align : center;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.eventmoji img {
+    width: 173.8px;
+}
+
+.eventlist {
+    width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    font-size: 23px;
+    background-color: #fff;;
+    padding-bottom: 25px;
+}
+
+.date {
+    padding-left: 156px;
+    padding-right: 55px;
+}
+
+.topic {
+    text-decoration:underline;
+}
+
+.date1 {
+    padding-left: 156px;
+    padding-right: 55px;
+    padding-top: 40px;
+}
+
+.topic1 {
+    text-decoration:underline;
+    padding-top: 40px;
+}
+
+.date3 {
+    padding-left: 156px;
+    padding-right: 55px;
+    padding-bottom: 17px;
+}
+
+.topic3 {
+    text-decoration:underline;
+}
+
+/* ここまでイベント（なんか違う）（枠線が付けれない） */
