@@ -267,42 +267,31 @@ h3 {
 
 .eventlist {
     width: 1000px;
-    display: flex;
     margin: 0 auto;
     font-size: 23px;
     background-color: #fff;;
-    padding-bottom: 25px;
-    /* border: 3.68px solid; */
-}
-
-.date {
-    padding-left: 156px;
-    padding-right: 55px;
+    border: 3.68px solid;
 }
 
 .topic {
     text-decoration:underline;
 }
 
-.date1 {
-    padding-left: 156px;
-    padding-right: 55px;
-    padding-top: 40px;
+.date {
+    padding-right: 56px;
 }
 
-.topic1 {
-    text-decoration:underline;
-    padding-top: 40px;
+.eventlist li {
+    display: flex;
+    padding-left: 157px;
+    padding-bottom: 22px;
 }
 
-.date3 {
-    padding-left: 156px;
-    padding-right: 55px;
-    padding-bottom: 17px;
+.eventlist li:first-child {
+    padding-top: 37px;
 }
 
-.topic3 {
-    text-decoration:underline;
+.eventlist li:last-child {
+    padding-bottom: 42px;
 }
 
-/* ここまでイベント（なんか違う）（枠線が付けれない） */
