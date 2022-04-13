@@ -151,7 +151,7 @@ body {
 }
 
 .about2x img {
-    width: 50%;
+    width: 272.3px;
     padding-top: 68px;
 }
 
@@ -295,3 +295,69 @@ h3 {
     padding-bottom: 42px;
 }
 
+/* ここまでイベント */
+
+/* ここからマップ */
+
+.accessmoji {
+    text-align : center;
+    padding-top: 80px;
+    padding-bottom: 46px;    
+}
+
+.accessmoji img {
+    width: 213.8px;
+}
+
+.map {
+    position: relative;
+    width: 100%;
+    height: 471px;
+  }
+  
+  /* Google Mapのiframe */
+  .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ここまでマップ */
+
+  /* フッター */
+
+  .footerlogo {
+      width: 226.7px;
+      padding-left: 460px;
+      padding-right: 69px;
+  }
+
+  .footer {
+      display: flex;
+      background-color: #fff;
+      padding-top: 83px;
+  }
+
+  .footer .information li {
+      padding-bottom: 24px;
+      font-size: 20px;
+  }
+
+  .footer .information li:last-child {
+      padding-left: 124px;
+      padding-top: 80px;
+      padding-bottom: 80px;
+  }
+
+  .footer .information li .copy {
+      font-size: 16px;
+  }
+
+  .totop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 125px;
+  }
