@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>デザインカフェ</title>
     <meta name="description" content="カフェのサイトです">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -23,11 +25,23 @@
                     <li><a href="#access">ACCESS</a></li>
                 </ul>
             </nav>
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#access">ACCESS</a></li>
+                </ul>
+            </nav>
         </div>
         <div class="slider">
-            <p>
-                <img src="images/pc_first-100.jpg" alt="カフェの椅子">
-            </p>
+
+            <picture>
+                <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width: 767px)">
+                <img src="images/pc_first-100.jpg" alt="デザインカフェ店内の様子">
+            </picture>
+
         </div>
     </header>
 
@@ -37,8 +51,8 @@
         <p class="copy">Have a happy day From a cup of coffee.</p>
         <h2 class="happy">ハッピーに溢れる1日を<br>
             1杯のコーヒーから。</h2>
-        <p class="mainiti">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
-            足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
+        <p class="mainiti">毎日を丁寧に大切に過ごしたい。<br class="mainti_br">だからこそ一杯一杯丁寧にコーヒーを入れ<br>
+            足を運んでくれるお客さんには落ち着く空間と<br class="mainti_br">こだわりのコーヒーを提供したい。</p>
     </section>
 
     <!-- ここまで一杯のコーヒー -->
@@ -46,9 +60,19 @@
     <!-- アバウトアス -->
 
     <section class="aboutus" id="about">
-        <p class="rate"><img src="images/about_us@2x-100.jpg" alt="ラテアート"></p>
+        <div class="sp_about2x">
+            <h2>
+                <img src="images/about_us@2x.png" alt="スマホ用私たちについて">
+            </h2>
+        </div>
+        <p class="rate">
+            <picture>
+                <source srcset="images/about_us@2x-100.jpg" media="(max-width: 767px)">
+                <img src="images/pc_about-100.jpg" alt="ラテアート">
+            </picture>
+        </p>
         <div class="watasitati">
-            <p class="about2x"><img src="images/about_us@2x.png" alt="私たちについて"></p>
+            <h2 class="about2x"><img src="images/about_us@2x.png" alt="私たちについて"></h2>
             <p class="kodawari">私たちが提供する<br>
                 こだわりのコーヒー</p>
             <p class="message">
@@ -62,9 +86,9 @@
     <!-- メニュー -->
 
     <section class="menu" id="menu">
-        <p class="menumoji">
+        <h2 class="menumoji">
             <img src="images/menu@2x.png" alt="メニュー">
-        </p>
+        </h2>
         <ul class="menulist">
             <li>
                 <p class="coffee">
@@ -94,80 +118,101 @@
 
     <!-- ここからギャラリー -->
 
-    <p class="gallerymoji" id="gallery">
-        <img src="images/gallery@2x.png" alt="ギャラリー">
-    </p>
+    <section>
+        <p class="gallerymoji" id="gallery">
+            <img src="images/gallery@2x.png" alt="ギャラリー">
+        </p>
 
-    <ul class="galleryphoto">
-        <li><img src="images/pc_gallary_05-100.jpg" alt="にぎやかな店内"></li>
-        <li><img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆"></li>
-        <li><img src="images/pc_gallary_03-100.jpg" alt="オシャレな内装"></li>
-        <li><img src="images/pc_gallary_02-100.jpg" alt="かわいいランプ"></li>
-        <li><img src="images/pc_gallary_01-100.jpg" alt="カフェラテ"></li>
-    </ul>
+        <ul class="galleryphoto">
+            <li><img src="images/pc_gallary_05-100.jpg" alt="にぎやかな店内"></li>
+            <li><img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆"></li>
+            <li><img src="images/pc_gallary_03-100.jpg" alt="オシャレな内装"></li>
+            <li><img src="images/pc_gallary_02-100.jpg" alt="かわいいランプ"></li>
+            <li><img src="images/pc_gallary_01-100.jpg" alt="カフェラテ"></li>
+        </ul>
+    </section>
 
     <!-- ここまでギャラリー -->
 
     <!-- ここからイベント -->
 
-    <p class="eventmoji">
-        <img src="images/event@2x.png" alt="イベント">
-    </p>
+    <section>
+        <p class="eventmoji">
+            <img src="images/event@2x.png" alt="イベント">
+        </p>
 
-    <ul class="eventlist">
-        <li>
-            <p class="date">2020.06.23</p>
-            <p class="topic">7月はイベント出店のため0/0お休みします</p>
-        </li>
-        <li>
-            <p class="date">2020.03.15</p>
-            <p class="topic">春の新商品新発売。話題のあのブランドとコラボ</p>
-        </li>
-        <li>
-            <p class="date">2020.02.06</p>
-            <p class="topic">コーヒーの日で30％OFFイベントを開催［3日間限定］</p>
-        </li>
-    </ul>
+        <ul class="eventlist">
+            <li>
+                <p class="date">2020.06.23</p>
+                <p class="topic">7月はイベント出店のため0/0お休みします</p>
+            </li>
+            <li>
+                <p class="date">2020.03.15</p>
+                <p class="topic">春の新商品新発売。話題のあのブランドとコラボ</p>
+            </li>
+            <li>
+                <p class="date">2020.02.06</p>
+                <p class="topic">コーヒーの日で30％OFFイベントを開催［3日間限定］</p>
+            </li>
+        </ul>
+    </section>
 
     <!-- ここまでイベント -->
 
     <!-- ここからアクセス -->
 
-    <p class="accessmoji" id="access">
-        <img src="images/access@2x.png" alt="アクセス">
-    </p>
+    <section>
+        <p class="accessmoji" id="access">
+            <img src="images/access@2x.png" alt="アクセス">
+        </p>
 
-    <div class="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.700333252833!2d141.13453431499136!3d39.70144120675395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f857633a9371ab5%3A0xe2098467afff7c95!2z55ub5bKh6aeF!5e0!3m2!1sja!2sjp!4v1649857384055!5m2!1sja!2sjp"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.700333252833!2d141.13453431499136!3d39.70144120675395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f857633a9371ab5%3A0xe2098467afff7c95!2z55ub5bKh6aeF!5e0!3m2!1sja!2sjp!4v1649857384055!5m2!1sja!2sjp"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
 
     <!-- ここまでアクセス -->
 
     <!-- ここからフッター -->
 
-    <section class="footer">
-        <p class="footerlogo">
-            <img src="images/design_cafe_logo_footer@2x.png" alt="デザインカフェ">
-        </p>
+    <footer>
+        <div class="cafe_information">
+            <p class="footerlogo">
+                <img src="images/design_cafe_logo_footer@2x.png" alt="デザインカフェ">
+            </p>
 
-        <ul class="information">
-            <li>OPEN 18:00 / CLOSE 24:00</li>
-            <li>〒150-0022</li>
-            <li>東京都渋谷区東京南123デザインビルB1</li>
-            <li>MAIL：info@designcafe.tokyo</li>
-            <li>
-                <p class="copy">© 2021 DESIGN CAFE</p>
-            </li>
-        </ul>
-    </section>
+            <ul class="information">
+                <li>OPEN 18:00 / CLOSE 24:00</li>
+                <li>〒150-0022</li>
+                <li>東京都渋谷区東京南123デザインビルB1</li>
+                <li>MAILinfo@designcafe.tokyo</li>
+            </ul>
+        </div>
+
+        <p class="copyright">© 2021 DESIGN CAFE</p>
+    </footer>
+
 
     <p class="totop">
         <a href="#header">
             <img src="images/to_top@2x.png" alt="トップに戻る">
         </a>
     </p>
+
+    <!-- ここからjQuery -->
+
+    <script>
+        $(function () {
+            $('.sp_btn,.sp_nav li').click(function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open');
+            });
+        });
+    </script>
 
 </body>
 
