@@ -63,6 +63,7 @@ img {
     left: 0;
     width: 100%;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 .logo {
@@ -93,6 +94,22 @@ img {
     width: 100%;
 }
 
+.slick-dots {
+    bottom: 20px;
+}
+
+.slick-dots li.slick-active button:before{
+    color: white;
+}
+
+.slick-dots li button:before {
+    color: white;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
 /* ここまでがヘッダー */
 
 /* 一杯のコーヒー */
@@ -102,7 +119,7 @@ body {
 }
 
 .concept {
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
     text-align:center
 }
@@ -118,7 +135,6 @@ body {
     font-weight: normal;
     line-height: 1.17;
     letter-spacing: 0.1em;
-
 }
 
 .mainiti {
@@ -141,6 +157,7 @@ body {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    padding: 0 20px 0;
 }
 
 .sp_about2x {
@@ -197,7 +214,7 @@ body {
 }
 
 .menulist {
-    width: 1000px;
+    max-width: 1000px;
     display: flex;
     justify-content: space-between;
 }
@@ -228,7 +245,7 @@ body {
 }
 
 .recommend {
-    width: 300px;
+    /* width: 300px; */
     font-size: 17px;
     line-height: 1.47;
     padding-top: 24px;
@@ -254,15 +271,20 @@ h3 {
     padding-bottom: 26px;
 }
 
-.galleryphoto img {
+/* .galleryphoto img {
     width: 384px;
-    height: 300px;
+    height: 300px; */
     object-fit: cover;
 }
 
 .galleryphoto {
     display: flex;
 }
+
+.galleryphoto ul li {
+    width: 20%; 
+}
+
 
 /* ここまでギャラリー */
 
@@ -346,8 +368,12 @@ h3 {
       /* padding-left: 460px; */
       padding-right: 69px;
   }
-  
+
 footer {
+    background-color: #fff;
+}
+
+.footterwrap {
       max-width: 1000px;
       margin: 0 auto;
       padding-top: 83px;
@@ -490,7 +516,7 @@ footer .copyright {
     }
 
     .concept .happy {
-        font-size: 38px;
+        font-size: 10.13vw;
         line-height: 1.15;
         letter-spacing: 0.02em;
     }
@@ -547,8 +573,18 @@ footer .copyright {
         margin: 0 auto;
     }
 
+    .menulist li {
+        width: auto;
+        padding: 0 20px 0;
+    }
+
+    .menulist li h3 {
+        font-size: 40px;
+    }
+
     .recommend {
         padding-bottom: 60px;
+        font-size: 17px;
     }
 
     /* ギャラリー */
@@ -562,6 +598,15 @@ footer .copyright {
         width: 100%;
     }
 
+    .galleryphoto {
+        display: block;
+    }
+
+    /* ここ、これであってるのか謎 */
+    .galleryphoto img {
+        width: 100%;
+    }
+
     /* イベント */
 
     .eventmoji {
@@ -569,13 +614,15 @@ footer .copyright {
         margin: 0 auto;
     }
 
-    .eventlist {
+    /* .eventlist {
         max-width: 335px;
-    }
+    } */
 
     .eventlist li {
         margin: 0 auto;
         display: block;
+        padding-left: 20px;
+        padding-right: 20px;
         white-space:nowrap;
         width:100%;
         overflow:hidden;
@@ -596,7 +643,7 @@ footer .copyright {
         width: 124px;
     }
 
-    .map iframe {
+    .map {
         height: 191px;
     }
 
