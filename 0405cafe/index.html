@@ -175,20 +175,22 @@
             <img src="images/event@2x.png" alt="イベント">
         </h2>
 
-        <ul class="eventlist">
-            <li>
-                <p class="date">2020.06.23</p>
-                <p class="topic">7月はイベント出店のため0/0お休みします</p>
-            </li>
-            <li>
-                <p class="date">2020.03.15</p>
-                <p class="topic">春の新商品新発売。話題のあのブランドとコラボ</p>
-            </li>
-            <li>
-                <p class="date">2020.02.06</p>
-                <p class="topic">コーヒーの日で30％OFFイベントを開催［3日間限定］</p>
-            </li>
-        </ul>
+        <div class="eventlist">
+            <ul>
+                <li>
+                    <p class="date">2020.06.23</p>
+                    <p class="topic">7月はイベント出店のため0/0お休みします</p>
+                </li>
+                <li>
+                    <p class="date">2020.03.15</p>
+                    <p class="topic">春の新商品新発売。話題のあのブランドとコラボ</p>
+                </li>
+                <li>
+                    <p class="date">2020.02.06</p>
+                    <p class="topic">コーヒーの日で30％OFFイベントを開催［3日間限定］</p>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <!-- ここまでイベント -->
@@ -261,6 +263,7 @@
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
+            arrows: false,
             responsive: [
                 {
                     breakpoint: 787, //786px以下のサイズに適用

@@ -165,7 +165,7 @@ body {
 }
 
 .watasitati {
-    width: 500px;
+    width: 50%;
     padding-left: 80px;
 }
 
@@ -188,7 +188,7 @@ body {
 }
 
 .message {
-    width: 410px;
+    /* width: 410px; */
     font-size: 16px;
     line-height: 1.625;
     padding-top: 34px;
@@ -273,7 +273,7 @@ h3 {
 
 /* .galleryphoto img {
     width: 384px;
-    height: 300px; */
+    height: 300px;
     object-fit: cover;
 }
 
@@ -283,7 +283,7 @@ h3 {
 
 .galleryphoto ul li {
     width: 20%; 
-}
+} */
 
 
 /* ここまでギャラリー */
@@ -381,6 +381,9 @@ footer {
 
 .cafe_information {
     display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 80px;
   }
 
 footer .cafe_information .information li {
@@ -433,8 +436,8 @@ footer .copyright {
     .sp_btn{
          display: block;
          position: absolute;
-         top: 10px;
-         right: 10px;
+         top: 22px;
+         right: 20px;
          height: 33px;
          cursor: pointer;
          z-index: 100;
@@ -459,10 +462,10 @@ footer .copyright {
           transition: 0.3s;
       }
     .sp_btn span::before {
-          bottom: 10px;
+          bottom: 14px;
       }
     .sp_btn span::after {
-          top: 10px;
+          top: 14px;
       }
 
 
@@ -562,6 +565,11 @@ footer .copyright {
         line-height: 1.75;
     }
 
+    .watasitati {
+        width: auto;
+        padding-left: 0;
+    }
+
      /* メニュー */
 
     .menumoji img {
@@ -614,6 +622,13 @@ footer .copyright {
         margin: 0 auto;
     }
 
+    .eventlist {
+        width: auto;
+        margin: 0 20px;
+        background-color: #fff;;
+        border: 3px solid;
+    }
+
     /* .eventlist {
         max-width: 335px;
     } */
@@ -623,10 +638,10 @@ footer .copyright {
         display: block;
         padding-left: 20px;
         padding-right: 20px;
-        white-space:nowrap;
+        /* white-space:nowrap;
         width:100%;
         overflow:hidden;
-        text-overflow:ellipsis;
+        text-overflow:ellipsis; */
     }
 
     .eventlist .date {
@@ -635,6 +650,9 @@ footer .copyright {
 
     .eventlist .topic {
         font-size: 16px;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
     }
 
      /* アクセス */
@@ -656,6 +674,7 @@ footer .copyright {
     
     .cafe_information {
         display: block;
+        padding-top: 50px;
         padding-left: 20px;
         padding-bottom: 48px;
     }
